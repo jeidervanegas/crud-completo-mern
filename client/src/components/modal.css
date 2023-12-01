@@ -1,0 +1,52 @@
+
+.modalUno{
+    
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+} 
+.mofalUno-flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.boton{
+    cursor: pointer;
+    position: absolute;
+    right: 0rem;
+    top: 4rem;
+    width: 6rem;
+    height: 6rem;
+}
+@media(min-width:768px) {
+    .boton{
+
+        right: 22rem;
+        top: 4rem;
+        width: 6rem;
+        height: 6rem;
+    }
+}
+.flex{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+@media (min-width:768px) {
+    .flex{
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 8rem;
+    }
+}
