@@ -96,12 +96,14 @@ employeeCtrl.updateEmployee = async (req, res) => {
 
 employeeCtrl.searchEmployee = async (req, res) => {
   try {
-    const {  names } = req.params;
+    const {  query } = req.query;
+    console.log(query);
     const resp = await EmployeeModel.find({
-      names: { $regex: '.*' + names + '.*' },
+      names: { $regex: '.*' + query + '.*' },
       user:req.userid,
     });
-    messageGeneral(res, 200, true, resp, '')
+    messageGeneral(res, 200, true, resp, '');
+
   } catch (error) {
     messageGeneral(res, 500, false, '', error.message)
   }

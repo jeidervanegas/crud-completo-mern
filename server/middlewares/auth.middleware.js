@@ -14,6 +14,7 @@ export const verifyToken = (req, res, next) => {
       'Usted no está autorizado 1'
     );
   }
+  console.log(req.headers.authorization);
 
   //extraemos el token
   const token = req.headers.authorization.split(" ")[1];

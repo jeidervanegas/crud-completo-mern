@@ -9,6 +9,6 @@ route.get('/listid/:id', verifyToken, employeeCtrl.listById);
 route.get('/listboss', verifyToken, employeeCtrl.listEmployeeBoss);
 route.delete('/delete/:id', verifyToken, employeeCtrl.deleteEmployee);
 route.put('/update/:id', verifyToken, employeeCtrl.updateEmployee);
-route.get('/search/:names', verifyToken, employeeCtrl.searchEmployee);
+route.get('/search', verifyToken, employeeCtrl.searchEmployee);
 
 export default route;
